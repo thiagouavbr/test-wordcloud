@@ -7,7 +7,7 @@ from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 import os
 
 # importar o arquivo csv em um df
-text_file = open("C:/Users/tar/Desktop/entrada.txt", "r")
+text_file = open("./entrada.txt", "r")
 
 #df = text_file.read().split(' ')
 
@@ -33,5 +33,5 @@ ax.imshow(wordcloud, interpolation='bilinear')
 ax.set_axis_off()
 
 plt.imshow(wordcloud);
-wordcloud.to_file("C:/Users/tar/Desktop/whatsapp_summary_wordcloud.png")
-os.startfile("C:/Users/tar/Desktop/whatsapp_summary_wordcloud.png")
+wordcloud.to_file("whatsapp_summary_wordcloud.png")
+os.startfile("whatsapp_summary_wordcloud.png")
